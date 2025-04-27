@@ -9,8 +9,10 @@ import matplotlib.pyplot as plt
 from shapely import Polygon
 from helpers import add_polygon_to_plot, recur_is_bounded
 
-outline_gerber = GerberFile.from_file("./gerbers/1930238-00-D_02-1.GM1",FileTypeEnum.INFER_FROM_ATTRIBUTES)
-mask_gerber = GerberFile.from_file("./gerbers/1930238-00-D_02-1.GM10",FileTypeEnum.INFER_FROM_ATTRIBUTES)
+#outline_gerber = GerberFile.from_file("./gerbers/1930238-00-D_02-1.GM1",FileTypeEnum.INFER_FROM_ATTRIBUTES)
+#mask_gerber = GerberFile.from_file("./gerbers/1930238-00-D_02-1.GM10",FileTypeEnum.INFER_FROM_ATTRIBUTES)
+outline_gerber = GerberFile.from_file("./gerber_full_files/board_outline.GM1",FileTypeEnum.INFER_FROM_ATTRIBUTES)
+mask_gerber = GerberFile.from_file("./gerber_full_files/top_mask.GM10",FileTypeEnum.INFER_FROM_ATTRIBUTES)
 
 outline_info = outline_gerber.parse().get_info()
 

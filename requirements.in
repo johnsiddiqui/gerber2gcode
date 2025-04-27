@@ -1,3 +1,5 @@
 matplotlib
 numpy
 shapely
+pygerber
+pulp
